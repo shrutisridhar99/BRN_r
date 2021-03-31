@@ -117,6 +117,7 @@ valid.input <- function(prompt, allowed_input, error){
     }
     if(!(input %in% allowed_input)){
       cat(error, "\n")
+      input <- readLines(con = con, n = 1)
     }
     return(input)
   }
