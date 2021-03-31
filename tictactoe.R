@@ -1,3 +1,5 @@
+#These are the winning combinations in any tic=tac-toe game
+
 winning_combos <- list(
   c(1,2,3),
   c(4,5,6),
@@ -50,7 +52,7 @@ computer_turn <- function(state) {
   return(as.integer(pos))
 }
 
-#computer needs to determine the best spot
+#The logic here is that the computer should block a winning move by the player and should play a winning move if possible. 
 
 BestSpot <- function(my.pos, opp.pos, state){
   i <- 1
